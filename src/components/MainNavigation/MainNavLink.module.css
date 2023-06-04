@@ -1,0 +1,10 @@
+.link a {
+	color: var(--neutral-dark-blue);
+	transition: color 100ms ease-in-out;
+	font-size: 15px;
+}
+
+.link a:hover,
+.link a:focus {
+	color: var(--primary-red);
+}

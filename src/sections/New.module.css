@@ -1,0 +1,26 @@
+.section {
+	background-color: var(--neutral-dark-blue);
+	display: flex;
+	flex-direction: column;
+	padding: 1.25rem;
+}
+
+.title {
+	color: var(--primary-orange);
+	margin: 0.5rem 0rem;
+	font-size: 35px;
+	font-weight: 700;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: stretch;
+}
+
+.divider {
+	background-color: var(--neutral-dark-grayish-blue);
+	height: 1px;
+	width: 100%;
+}

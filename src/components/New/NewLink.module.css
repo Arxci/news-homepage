@@ -1,0 +1,24 @@
+.link {
+	margin: 1rem 0rem;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.link a {
+	color: var(--neutral-off-white);
+	transition: color 100ms ease-in-out;
+	font-size: 17.5px;
+	font-weight: 700;
+}
+
+.link a:hover,
+.link a:focus {
+	color: var(--primary-orange);
+}
+
+.link p {
+	color: var(--neutral-grayish-blue);
+	font-size: 15px;
+	line-height: 25px;
+}
