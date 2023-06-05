@@ -24,3 +24,27 @@
 	height: 1px;
 	width: 100%;
 }
+
+@media (max-width: 1024px) {
+	.list {
+		flex-direction: row;
+		gap: 20px;
+	}
+
+	.divider {
+		height: 150px;
+		width: 1px;
+	}
+}
+
+@media (max-width: 640px) {
+	.list {
+		flex-direction: column;
+		gap: 0px;
+	}
+
+	.divider {
+		height: 1px;
+		width: 100%;
+	}
+}

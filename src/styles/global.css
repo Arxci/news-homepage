@@ -4,6 +4,7 @@
 - Desktop: 1440px
 */
 :root {
+	/*colors*/
 	--primary-orange: hsl(35, 77%, 62%);
 	--primary-red: hsl(5, 85%, 63%);
 	--neutral-off-white: hsl(36, 100%, 99%);

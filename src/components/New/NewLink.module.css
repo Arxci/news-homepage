@@ -22,3 +22,9 @@
 	font-size: 15px;
 	line-height: 25px;
 }
+
+@media (max-width: 1024px) {
+	.link {
+		flex: 1;
+	}
+}
