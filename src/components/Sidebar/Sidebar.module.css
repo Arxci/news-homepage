@@ -1,0 +1,39 @@
+.sidebar,
+.backdrop {
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+.container {
+	background-color: var(--neutral-off-white);
+	width: 70%;
+	position: absolute;
+	right: 0;
+	height: 100%;
+	padding: 1rem;
+}
+
+.backdrop {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.actions {
+	display: flex;
+	justify-content: flex-end;
+	padding: 3rem 0rem 3rem 0rem;
+}
+
+.button {
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+
+.nav ul {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}

@@ -1,12 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './Headline.module.css'
 import Banner from '../assets/images/image-web-3-desktop.jpg'
+import BannerMobile from '../assets/images/image-web-3-mobile.jpg'
 
 const Headline = () => {
+	const [bannerImg, setBannerImg] = useState(Banner)
+
+	const resizeHandler = (e) => {
+		const windowSize = e.target.outerWidth
+		const mobileBreakpoint = 640
+		if (windowSize <= mobileBreakpoint) {
+			setBannerImg(BannerMobile)
+			return
+		}
+		setBannerImg(Banner)
+	}
+
+	useEffect(() => {
+		window.addEventListener('resize', resizeHandler)
+
+		return () => window.removeEventListener('resize', resizeHandler)
+	}, [])
+
 	return (
 		<section className={styles.section}>
 			<div className={styles.banner}>
-				<img src={Banner} alt="" />
+				<img src={bannerImg} alt="" />
 			</div>
 			<div className={styles.content}>
 				<h1 className={styles.title}>The Bright Future of Web 3.0?</h1>

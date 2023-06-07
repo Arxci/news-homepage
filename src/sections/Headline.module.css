@@ -71,3 +71,28 @@
 		font-size: 50px;
 	}
 }
+
+@media (max-width: 640px) {
+	.section {
+		margin-bottom: 3rem;
+	}
+
+	.content {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.banner {
+		min-height: 300px;
+		background-color: red;
+	}
+
+	.banner img {
+		min-height: 300px;
+		object-fit: cover;
+	}
+
+	.button {
+		height: 50px;
+	}
+}
